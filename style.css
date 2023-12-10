@@ -142,21 +142,35 @@ p {
   color: var(--dark-grayish-blue);
 }
 
-@media (min-width: 600px) {
-    body {
+/* Example media query for tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Your tablet styles here */
+
+  body {
+    background-color: var(--light-gray-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    margin-top: -90px;
-    height: 100%;
+    top: 9%;
+    left: 10%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--white);
-    right: 20%;
-    font-size: 12px;
-    left: 20%;
+    border-radius: 9px;
+    width: 60vh;
+    height: 80vh;
   }
-  h1 {
-    font-size: 30px;
-  }
-  p {
-    font-size: 16px;
+  
+
+  .head p {
+    padding-left: 190px;
   }
 }
 
@@ -197,7 +211,6 @@ p {
   h1 {
     font-size: 20px;
   }
-  
 
   .recent {
     width: 100%;
@@ -215,10 +228,10 @@ p {
   }
 
   .head button {
-  background-color: var(--very-dark-blue);
-  color: var(--white);
-  width: 25px;
-  height: 25px;
-  border-radius: 5px;
-}
+    background-color: var(--very-dark-blue);
+    color: var(--white);
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+  }
 }

@@ -56,7 +56,7 @@ p {
 }
 
 h1 {
-  font-size: 14px;
+  font-size: 25px;
 }
 /* notification */
 .head {
@@ -146,7 +146,7 @@ h1 {
 }
 
 /* Example media query for tablets */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 724px) and (max-width: 1024px) {
   /* Your tablet styles here */
 
   body {

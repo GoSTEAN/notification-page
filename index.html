@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!-- displays site properly based on user's device -->
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -16,7 +19,7 @@
     <title>Frontend Mentor | Notifications page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
+    <!-- <style>
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -24,12 +27,14 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <div class="container">
       <div class="head">
-        <h1>Notifications <button>3</button></h1>
+        <h1>
+          Notifications <span><button>3</button></span>
+        </h1>
 
         <p>Mark all as read</p>
       </div>
@@ -40,6 +45,7 @@
           <p>
             <strong>Mark Webber</strong> reacted to your recent post
             <strong>My first tournament today!</strong>
+            <i class="fa fa-circle fa-1x" style="color: red"></i>
           </p>
           <p>1m ago</p>
         </div>
@@ -47,7 +53,10 @@
       <div class="recent">
         <img src="assets/images/avatar-angela-gray.webp" alt="" />
         <div class="text">
-          <p><strong>Angela Gray </strong> followed you</p>
+          <p>
+            <strong>Angela Gray </strong> followed you
+            <i class="fa fa-circle fa-1x" style="color: red"></i>
+          </p>
           <p>5m ago</p>
         </div>
       </div>
@@ -55,7 +64,9 @@
         <img src="assets/images/avatar-jacob-thompson.webp" alt="" />
         <div class="text">
           <p>
-            <strong>Jacob Thompson </strong> has joined your group Chess Club
+            <strong>Jacob Thompson </strong> has joined your group
+            <span>Chess Club</span>
+            <i class="fa fa-circle fa-1x" style="color: red"></i>
           </p>
           <p>1 day ago</p>
         </div>
@@ -79,7 +90,7 @@
           </div>
           <p>1 week ago</p>
         </div>
-        <img src="assets/images/image-chess.webp" alt="" class="chess-img"/>
+        <img src="assets/images/image-chess.webp" alt="" class="chess-img" />
       </div>
       <div class="layer">
         <img src="assets/images/avatar-nathan-peterson.webp" alt="" />
@@ -94,7 +105,9 @@
       <div class="layer">
         <img src="assets/images/avatar-anna-kim.webp" alt="" />
         <div class="text">
-          <p><strong>Anna Kim </strong> left the group Chess Club</p>
+          <p>
+            <strong>Anna Kim </strong> left the group <span>Chess Club</span>
+          </p>
           <p>2 weeks ago</p>
         </div>
       </div>
@@ -103,7 +116,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Tech Hunter</a>.
+      >. Coded by <a href="https://github.com/GoSTEAN">Tech Hunter</a>.
     </div>
   </body>
 </html>

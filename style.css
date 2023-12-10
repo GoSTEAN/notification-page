@@ -15,6 +15,14 @@
   --very-dark-blue: hsl(224, 21%, 14%);
 }
 
+strong {
+  color: var(--very-dark-blue);
+}
+
+span {
+  color: blue;
+}
+
 body {
   background-color: var(--light-gray-blue);
   display: flex;
@@ -22,7 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 10%;
+  top: 9%;
   left: 25%;
 }
 
@@ -110,12 +118,107 @@ p {
 
 .wrap {
   width: 60%;
-  height: 6%;
+  height: 9%;
   background-color: var(--light-grayish-blue);
   border-radius: 5px;
   border-color: var(--light-grayish-blue);
   margin-left: 5%;
-  margin-top: 5px;
   margin-bottom: 10px;
   overflow-wrap: break-word;
+}
+
+.attribution {
+  font-size: 20px;
+  color: var(--very-dark-blue);
+  margin-top: 35px;
+}
+
+.attribution a {
+  color: var(--very-dark-blue);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--dark-grayish-blue);
+}
+
+@media (min-width: 600px) {
+    body {
+    position: absolute;
+    margin-top: -90px;
+    height: 100%;
+    background-color: var(--white);
+    right: 20%;
+    font-size: 12px;
+    left: 20%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  * {
+    font-size: 14px;
+  }
+  body {
+    position: absolute;
+    margin-top: -20px;
+    height: 100%;
+    background-color: var(--white);
+    right: 20%;
+    font-size: 12px;
+    left: 20%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 150%;
+    height: 100%;
+  }
+
+  .attribution {
+    font-size: 11px;
+  }
+
+  .attribution a {
+    font-size: 11px;
+  }
+
+  .head p {
+    padding-left: 70px;
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+  
+
+  .recent {
+    width: 100%;
+  }
+  .layer {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 5%;
+  }
+  .wrap {
+    font-size: 14px;
+    width: 55%;
+    height: 25%;
+    margin-left: 15%;
+  }
+
+  .head button {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
 }
